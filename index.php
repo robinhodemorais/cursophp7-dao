@@ -23,10 +23,21 @@ echo json_encode($usuarios);
 //echo json_encode($search);
 
 //carrega o usuario
-$usuario = new Usuario();
+//$usuario = new Usuario();
+//$usuario->login("root","123");
+//echo $usuario;
 
-$usuario->login("root","123");
+//insert
+//$aluno = new Usuario("aluno","45564");
+//$aluno->insert();
+//echo $aluno;
+
+$usuario = new Usuario();
+//carrega o usuario 9
+$usuario->loadById(9);
+$usuario->update("Alice","654");
 
 echo $usuario;
+
 
 ?>
