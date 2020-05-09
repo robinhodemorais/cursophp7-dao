@@ -32,12 +32,17 @@ echo json_encode($usuarios);
 //$aluno->insert();
 //echo $aluno;
 
-$usuario = new Usuario();
+//atualiza usuario
+//$usuario = new Usuario();
 //carrega o usuario 9
-$usuario->loadById(9);
-$usuario->update("Alice","654");
+//$usuario->loadById(9);
+//$usuario->update("Alice","654");
+//echo $usuario;
 
+//delete o usuario 
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->delete();
 echo $usuario;
-
 
 ?>
